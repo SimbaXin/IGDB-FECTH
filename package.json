@@ -1,0 +1,30 @@
+{
+  "name": "igdb-fecth",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SimbaXin/IGDB-FECTH.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SimbaXin/IGDB-FECTH/issues"
+  },
+  "homepage": "https://github.com/SimbaXin/IGDB-FECTH#readme",
+  "dependencies": {
+    "bluebird": "^3.5.0",
+    "isomorphic-fetch": "^2.2.1",
+    "mongoose": "^4.10.6"
+  },
+  "devDependencies": {
+    "ava": "^0.19.1",
+    "nyc": "^11.0.2",
+    "sinon": "^2.3.4"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "IGDB": {
+    "API_KEY": YOUR_API_KEY,
+    "BASE_URL": "https://igdbcom-internet-game-database-v1.p.mashape.com",
+    "PATH": {
+      "company": "companies"
+    }
+  }
+}
