@@ -6,7 +6,8 @@
       "company": "companies",
       "game": "games",
       "genre": "genres",
-      "serie": "collections"
+      "serie": "collections",
+      "platform": "platforms"
     }
   }
 }

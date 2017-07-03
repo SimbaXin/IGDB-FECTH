@@ -3,6 +3,7 @@ const config = require('../../../app.config').IGDB;
 
 async function oneFetch(model, path, offset, limit, taskQueue, parallel, resolve, additionalQuery) {
   try {
+    // console.log(`Fetch ${path} model data ${offset}...`);
     let response = await fetch(`${config.BASE_URL}/${config.PATH[path]}/?fields=*&limit=${limit}&offset=${offset}&order=release_dates.date:desc`, { headers: {'X-Mashape-Key': config.API_KEY } });
     let docs = await response.json();
     

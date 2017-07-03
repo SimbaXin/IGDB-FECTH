@@ -4,6 +4,7 @@ let CompanyModel = require('../../model/company');
 let GameModel = require('../../model/game');
 let GenreModel = require('../../model/genre');
 let SerieModel = require('../../model/serie');
+let PlatformModel = require('../../model/platform');
 
 async function runAsyncTask(model, path, task, additionalQuery) {
   return new Promise((resolve, reject) => {
@@ -17,5 +18,6 @@ module.exports = async function() {
   await runAsyncTask(GenreModel, 'genre', simpleRunTask);
   await runAsyncTask(GameModel, 'game', concurrentRunTask);
   await runAsyncTask(SerieModel, 'serie', simpleRunTask);
+  await runAsyncTask(PlatformModel, 'platform', concurrentRunTask);
   console.log('igdb task done.');
 }
